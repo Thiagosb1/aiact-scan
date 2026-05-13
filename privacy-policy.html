@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<title>AI Act Scan — Privacy Policy</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; max-width: 720px; margin: 0 auto; padding: 48px 24px; line-height: 1.7; }
+  h1 { font-size: 24px; font-weight: 600; margin-bottom: 6px; }
+  .meta { font-size: 13px; color: #666; margin-bottom: 40px; }
+  h2 { font-size: 16px; font-weight: 600; margin: 32px 0 10px; color: #1a1a1a; }
+  p { font-size: 15px; color: #333; margin-bottom: 12px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { font-size: 15px; color: #333; margin-bottom: 6px; }
+  .highlight { background: #f0f7ff; border-left: 3px solid #3b82f6; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 14px; }
+  .no-data { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 14px; color: #15803d; font-weight: 500; }
+  .contact { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #666; }
+  a { color: #3b82f6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f0f13; color: #e8e8f0; }
+    h2 { color: #e8e8f0; }
+    p, li { color: #aaa; }
+    .highlight { background: #1a1f2e; border-color: #4f8aff; }
+    .no-data { background: #0f1f14; border-color: #22c97a; color: #22c97a; }
+    .contact { border-color: #2a2a3a; color: #666; }
+  }
+</style>
+</head>
+<body>
+
+<h1>AI Act Scan — Privacy Policy</h1>
+<p class="meta">Sovereign Systems · Thiago de Sousa Barbosa Monteiro · NIF 317102176<br>
+Last updated: May 2026 · Version 1.2.0</p>
+
+<div class="no-data">
+  This extension does not collect, transmit, store, or share any personal data with any external server. All processing happens locally on your device.
+</div>
+
+<h2>What this extension does</h2>
+<p>AI Act Scan is a technical compliance diagnostic tool for the EU AI Act 2024/1689. When activated on a website, it analyzes publicly visible elements of that page to assess compliance with Articles 9, 12, 13, 14, 15, 49 and 50 of the EU AI Act.</p>
+
+<h2>What data is processed</h2>
+<p>The extension reads the following from the currently active browser tab:</p>
+<ul>
+  <li>The page URL and domain name</li>
+  <li>Publicly visible HTML elements (chatbot widgets, privacy policy links, page text)</li>
+  <li>The browser's language setting (to display the interface in the correct language)</li>
+</ul>
+<p>This data is processed entirely within your browser. It is never sent to any external server.</p>
+
+<h2>What data is stored locally</h2>
+<p>The extension stores the following data in <code translate="no">chrome.storage.local</code> on your device only:</p>
+<ul>
+  <li>Whether you have accepted the terms of use (true/false)</li>
+  <li>An anonymous consent receipt: a SHA-256 hash of the terms text, a timestamp, and a randomly generated session ID. This contains no personal information.</li>
+  <li>A log of report hashes: the SHA-256 hash of each report generated, the site domain, timestamp, and number of compliance gaps. No personal data is included.</li>
+</ul>
+<div class="highlight">
+  The consent receipt is anonymous by design. It proves that the terms were accepted on this device at a specific time, without identifying who accepted them. No name, email, IP address, or any other personal identifier is stored.
+</div>
+
+<h2>What you download</h2>
+<p>When you click "Download Report", a JSON file is saved to your device. This file contains:</p>
+<ul>
+  <li>The compliance assessment results for the analyzed site</li>
+  <li>Your answers to the 5 diagnostic questions</li>
+  <li>The anonymous consent receipt</li>
+  <li>A SHA-256 hash for integrity verification</li>
+</ul>
+<p>This file stays on your device. It is not uploaded anywhere.</p>
+
+<h2>Permissions used</h2>
+<ul>
+  <li><span translate="no"><strong>activeTab</strong></span> — to read the currently open tab's URL and inject the page analysis script when the user activates the extension</li>
+  <li><span translate="no"><strong>scripting</strong></span> — to run the page analysis script that detects AI systems on the page</li>
+  <li><span translate="no"><strong>storage</strong></span> — to save the consent receipt and report log locally on your device</li>
+</ul>
+<p>This extension does not use global host permissions (<code translate="no">&lt;all_urls&gt;</code>). It only accesses the tab where the user explicitly activates it.</p>
+
+<h2>Third parties</h2>
+<p>This extension does not use any third-party analytics, advertising networks, or tracking services. No data is shared with any third party.</p>
+
+<h2>GDPR compliance</h2>
+<p>This extension is designed to be fully compliant with Regulation (EU) 2016/679 (GDPR). No personal data is processed within the meaning of Article 4(1) GDPR. The anonymous consent receipt constitutes processing under Article 6(1)(b) (performance of a contract/terms of use) and contains no data that could identify a natural person.</p>
+
+<h2>Legal disclaimer</h2>
+<p>Reports generated by this extension do not constitute certified legal advice. They are technical diagnostic outputs intended to support compliance efforts. Final legal compliance decisions require a qualified lawyer. Sovereign Systems assumes no liability for decisions based on reports generated by this extension.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes in a material way, the extension version number will be incremented and the terms acceptance will be reset, requiring users to review and accept the updated terms before continuing.</p>
+
+<div class="contact">
+  <strong>Contact</strong><br>
+  Thiago de Sousa Barbosa Monteiro<br>
+  Sovereign Systems · NIF 317102176<br>
+  Rua da Fontinha 25, 2140-092 Chamusca, Portugal<br>
+  Safe Creative #2602134552103
+</div>
+
+</body>
+</html>
